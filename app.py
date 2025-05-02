@@ -185,5 +185,17 @@ def home():
 </html>"""
     return html_content
 
+@app.route('/about')
+def about():
+    return "<h1>About Page</h1><p>This is the about page.</p>"
+
+@app.route('/contact')
+def contact():
+    return "<h1>Contact Page</h1><p>This is the contact page.</p>"
+
+@app.route('/blog')
+def blog():
+    return "<h1>Blog Page</h1><p>This is the blog page.</p>"
+
 if __name__ == '__main__':
     app.run()
